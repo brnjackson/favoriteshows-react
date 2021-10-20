@@ -6,14 +6,12 @@ import ShowInfo from './ShowInfo'
 const ShowList = (props) => {
 
 
-      const doSomething = (props) => {
-          return <h2>{props.word}hi!</h2>
-      }
 
  return (
     <div>
-      <ul>{props.shows.map((show => <button onClick={doSomething(word)}>{show}</button>))}
+      <ul>{props.shows.map((show => <button onClick={doSomething}>{show}</button>))}
       </ul>
+      <ShowInfo />
     </div>
   )
     }
