@@ -1,19 +1,16 @@
-import React, {useState} from 'react'
-import favShows from '../favShows'
-import ShowInfo from './ShowInfo'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import './all.css'
+
 
 
 const ShowList = (props) => {
 
-
-      const doSomething = (props) => {
-          return <h2>{props.word}hi!</h2>
-      }
+  const { shows, network} = props
 
  return (
     <div>
-      <ul>{props.shows.map((show => <button onClick={doSomething(word)}>{show}</button>))}
-      </ul>
+      <ul>{shows.map((show => <li>{show.title} <NavLink to={`/shows/${network}/${show.id}`}>more info</NavLink></li>))}</ul>
     </div>
   )
     }

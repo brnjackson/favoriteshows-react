@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 50px;
+}
+
+li {
+   list-style: none;
+   line-height: 30px;
+   text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+a:hover {
+    background-color: white;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: rgb(212, 212, 212);
+    font-size: 11px;
+}
+
+.showinfo {
+
+   
+    font-size: 15px;
+
+}
+
+span {
+    font-style: italic;
+    padding-bottom: 30px;
+}
